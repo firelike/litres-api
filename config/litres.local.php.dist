@@ -1,0 +1,17 @@
+<?php
+return [
+    'litres_service' => [
+        'log'=>[
+            'enable'=>false,
+            'message_formats'=>[
+                '{method} {uri} HTTP/{version} {req_body}',
+                'RESPONSE: {code} - {res_body}',
+            ],
+            'logger'=>[
+                 'stream' => 'php://output',
+            ]
+        ]
+    ]
+];
+
+
